@@ -132,5 +132,13 @@ namespace TestKomi2.Controllers
             }
             base.Dispose(disposing);
         }
+        public ActionResult Research(string Res)
+        {
+            using (NorthwindEntities context = new NorthwindEntities())
+            {
+                var query = context.Products.Where(p => p.ProductName.Contains(Res)).Include(c => c.Category).Include(s => s.Supplier);
+                return View("Index", query.ToList());
+            }
+        }
     }
 }
