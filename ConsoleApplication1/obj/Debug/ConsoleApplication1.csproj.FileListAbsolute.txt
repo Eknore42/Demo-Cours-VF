@@ -1,0 +1,9 @@
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\BCrypt.Net.dll
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\BCrypt.Net.pdb
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\bin\Debug\BCrypt.Net.xml
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\mark_\OneDrive\Documents\Eknore42\TestKomi\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @RenderSection("scripts", required: false)
+    <link href="@Url.Content("~/Content/MyStyle.css")" rel="stylesheet" type="text/css" />
+</head>
+<body style="padding-top:0px;">
+    <header>
+        <div class="centered">
+            @RenderSection("head", true)
+        </div>
+    </header>
+    <section>
+        <div style="overflow-y:auto;height:100%;margin:15px 5px 0px 5px;">
+            @RenderBody()
+            <br />
+        </div>
+    </section>
+
+    <footer>
+        @Html.Label("College de Valleyfield")<br />
+        @Html.Label("Fait par Marc-Andre Nadon")
+    </footer>
+</body>
+</html>

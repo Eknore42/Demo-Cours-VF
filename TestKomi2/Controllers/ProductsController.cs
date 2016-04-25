@@ -140,5 +140,14 @@ namespace TestKomi2.Controllers
                 return View("Index", query.ToList());
             }
         }
+        public ActionResult Filter(string Test)
+        {
+            using(NorthwindEntities context = new NorthwindEntities())
+            {
+                int cID = context.Categories.Where(c => c.CategoryName.Equals(Test)).FirstOrDefault().CategoryID;
+                var query = context.Products.Where(p => p.CategoryID == cID).Include(c => c.Category).Include(s => s.Supplier);
+                return View("Index", query.ToList());
+            }
+        }
     }
 }

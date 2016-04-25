@@ -16,6 +16,13 @@
         <input value="OK" type="submit" />
     }
 </p>
+<p>
+    @using (Html.BeginForm("Filter", "Products", FormMethod.Post))
+    {
+        @Html.TextBox("Test", "", new {placheholder="Chat"});
+        <input value="FilterBy" type="submit" />
+    }
+</p>
 <table class="table">
     <tr>
         <th>

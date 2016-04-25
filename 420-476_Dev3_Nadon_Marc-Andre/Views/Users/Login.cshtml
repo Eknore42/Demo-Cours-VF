@@ -1,0 +1,30 @@
+﻿@model _420_476_Dev3_Nadon_Marc_Andre.Models.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_MyLoginLayout.cshtml";
+}
+
+@section head{<h1>Login</h1>}
+<div class="centered">
+    @using (Html.BeginForm("log", "Users", FormMethod.Post))
+    {
+        <div>
+            @Html.TextBoxFor(model => model.Login, new { placeholder = Html.DisplayNameFor(n => n.Login)})
+            @Html.ValidationMessageFor(model => model.Login)
+        </div>
+        <div>
+            @Html.PasswordFor(model => model.Password, new { placeholder = Html.DisplayNameFor(n => n.Password) })
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+        <div>
+            <input id="Button1" type="submit" value="Submit" />
+        </div>
+    }
+    <div>
+        @if(Session["Error"] != null){
+            <label>@Session["Error"];</label>
+        }
+    </div>
+</div>
+
